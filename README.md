@@ -3,8 +3,8 @@
 ## Content
 - Perceptron
 - MLP
-- RBF Neural Networks
-(future)
+- RBF Neural Networks\
+(coming...)
 - GAN
 - Auto-encoder
 - Variational auto-encoder
