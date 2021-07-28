@@ -5,7 +5,7 @@
 - Implementation [here](./perceptron.py).
 
 \
-<img src="./img/perceptron.png" alt="drawing" width="400"/>
+<img src="./img/perceptron.png" alt="drawing" width="400"/>\
 Fig. 1 - Perceptron model
 
 
@@ -13,7 +13,7 @@ Fig. 1 - Perceptron model
 - Implementation [here](./multilayer_perceptron.py)
 
 \
-<img src="./img/mlp_network.png" alt="drawing" width="400"/>
+<img src="./img/mlp_network.png" alt="drawing" width="400"/>\
 Fig. 2 - Multilayer Perceptron (MLP) model
 
 ## Radial Basis Neural Networks
@@ -21,13 +21,13 @@ Fig. 2 - Multilayer Perceptron (MLP) model
 **Summary**
 - Radial basis function layer ([here](./radial_basis_function_nn.py))
 - Library of kernels ([here](./radial_basis_functions.py)) [3]
-- Coefficients trained using Gradient Descent (Adam) and Binary Cross Entropy (*torch.nn.BCEWithLogitsLoss*) for loss computation, on a binary classificaiton task and Toy data.
+- Coefficients (centers and scaling factors) trained using Gradient Descent (Adam) and Binary Cross Entropy (*torch.nn.BCEWithLogitsLoss*) for loss computation, on a binary classificaiton task and Toy data.
 
 A Radial Basis Function Network is an artificial neural network that uses radial basis functions as activation functions. The outup of the network is a linear combination of radial basis functions of the inputs and neuron parameters. Radial basis function networks have many uses, including funciton approximation, time series prediction, clssification, and system control [5].
 
 Radial Basis Functions (RBF) networks typically have three layers: an input, a hidden layer with a non-linear RBF activation function and a linear aoutput layer, as depicted in Fig. 3.
 
-<img src="./img/RadialBasisFunctionNet.png" alt="drawing" width="400"/>
+<img src="./img/RadialBasisFunctionNet.png" alt="drawing" width="400"/>\
 Fig. 3 - RBF model
 
 \
@@ -36,7 +36,8 @@ A Radial Basis Function (RBF), $\Phi_c$, is one whose output is symmetric around
 \
 $\Phi_c(x) = \Phi(||x-\mu_c||;\sigma)$
 
-An example of a gaussian RBF is shown in Fig. 5 for a binary classification task using Toy data.
+An example of a gaussian RBF is shown in Fig. 5 for a binary classification task using Toy data.\
+\
 <img src="./img/GT.png" alt="drawing" width="250"/>\
 Fig. 4 - Ground Truth for Toy data.
 
