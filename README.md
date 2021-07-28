@@ -31,7 +31,7 @@ Radial Basis Functions (RBF) networks typically have three layers: an input, a h
 Fig. 3 - RBF model
 
 \
-A Radial Basis Function (RBF), $\Phi_c$, is one whose output is symmetric around an associated center, $\mu_c$. That is, $\Phi_c(x) = \Phi(||x-\mu_c||)$, where $||.||$ is a vector norm [4]. For example, selecting the Euclidean norm and letting $\Phi(r)=e^{-r^2/\sigma^2}$, one sees that the Gaussian function is an RBF. Note that Gaussian functions are also characterized by a width or scle parameter, $\sigma$, and this is true for many other popular RBF classes as well. So such classes can be respresented as:
+A Radial Basis Function (RBF), <img src="https://render.githubusercontent.com/render/math?math=\Phi_c">, is one whose output is symmetric around an associated center, $\mu_c$. That is, $\Phi_c(x) = \Phi(||x-\mu_c||)$, where $||.||$ is a vector norm [4]. For example, selecting the Euclidean norm and letting $\Phi(r)=e^{-r^2/\sigma^2}$, one sees that the Gaussian function is an RBF. Note that Gaussian functions are also characterized by a width or scle parameter, $\sigma$, and this is true for many other popular RBF classes as well. So such classes can be respresented as:
 \
 \
 $\Phi_c(x) = \Phi(||x-\mu_c||;\sigma)$
