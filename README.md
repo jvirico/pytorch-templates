@@ -1,5 +1,15 @@
 
 # PyTorch templates for most common Neural Networks
+## Content
+- Perceptron
+- MLP
+- RBF Neural Networks
+(future)
+- GAN
+- Auto-encoder
+- Variational auto-encoder
+- Recurrent Neural Networks
+
 
 ## Perceptron
 - Implementation [here](./perceptron.py).
