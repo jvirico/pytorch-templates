@@ -134,7 +134,7 @@ if __name__ == '__main__':
     layer_widths = [2, 1]
     layer_centres = [40]
     basis_func = rbfs.gaussian
-
+    func = 'Gaussian'
     ##############
     # Toy Dataset
     #
@@ -181,19 +181,20 @@ if __name__ == '__main__':
     area_1 = values[np.where(preds[:, 0] > 0.5)[0]]
 
     fig, ax = plt.subplots(figsize=(16,8), nrows=1, ncols=2)
-    ax[0].scatter(x[:samples//2,0], x[:samples//2,1], c='dodgerblue')
-    ax[0].scatter(x[samples//2:,0], x[samples//2:,1], c='orange', marker='x')
     ax[0].scatter(ideal_0[:, 0], ideal_0[:, 1], alpha=0.1, c='dodgerblue')
-    ax[0].scatter(ideal_1[:, 0], ideal_1[:, 1], alpha=0.1, c='yellow')
+    ax[0].scatter(ideal_1[:, 0], ideal_1[:, 1], alpha=0.1, c='lightcoral')
+    ax[0].scatter(x[samples//2:,0], x[samples//2:,1], c='lightsalmon', marker='^')
+    ax[0].scatter(x[:samples//2,0], x[:samples//2,1], c='dodgerblue', marker='o')
     ax[0].set_xlim([-1,1])
     ax[0].set_ylim([-1,1])
-    ax[0].set_title('Ideal Decision Boundary')
+    ax[0].set_title('Ideal Boundary')
 
-    ax[1].scatter(x[:samples//2,0], x[:samples//2,1], c='dodgerblue')
-    ax[1].scatter(x[samples//2:,0], x[samples//2:,1], c='orange', marker='x')
+
     ax[1].scatter(area_0[:, 0], area_0[:, 1], alpha=0.1, c='dodgerblue')
-    ax[1].scatter(area_1[:, 0], area_1[:, 1], alpha=0.1, c='yellow')
+    ax[1].scatter(area_1[:, 0], area_1[:, 1], alpha=0.1, c='lightcoral')
+    ax[1].scatter(x[samples//2:,0], x[samples//2:,1], c='lightsalmon', marker='^')
+    ax[1].scatter(x[:samples//2,0], x[:samples//2,1], c='dodgerblue', marker='o')
     ax[1].set_xlim([-1,1])
     ax[1].set_ylim([-1,1])
-    ax[1].set_title('RBF Decision Boundary')
+    ax[1].set_title('%s Boundary'% func)
     plt.show()
